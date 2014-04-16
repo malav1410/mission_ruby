@@ -1,66 +1,86 @@
 # Mission 3
 
-<img src="http://assets-02.app.lk/icons/4/11af7cbec03f16d2629b20fef276a8f5?size=200" width="200px" height="200px" />
+<img src="http://www.ais.up.ac.za/human/books3.gif" width="300px" height="200px" />
 
 ### Overview
 
-Allow 2 humans to play Tic Tac Toe. The game should work from command line. Below is an example console output for the game.
+Create a program for library management. Cover below scenarios. When the program is executed a library is started with 10 books.
 
+User is shown the main menu with below options.
 
-	Enter first player's name: Batman
-	Enter second player's name: Superman
-	
-	Batman will play with "X" & Super man will play with "O".
-	
-	 	  A   B   C
- 	
-	1		|	|
-		-------------
-	2		|	|
-		-------------
-	3		| 	|
-		
-	Batmans turn(X): catwoman
-	Invalid Input: Please enter the column and row of your move (Example: A1).
-	
-	Batmans turn(X): A1
+* 1. View all books.
+* 2. View all members.
+* 3. Issue book to a member.
+* 3. Check book availability.
+* 4. Accept book returned by a member.
+* 5. Add book.
 
-	 	  A   B   C
-	1	  X	|	|
-		-------------
-	2		|	|
-		-------------
-	3		| 	|
+### Example flow of the app.
 
-	Supermans Move (O): A1
-	The space entered is already taken.
+	-------
+	Welcome to world's best library. Choose an option.
+	-------
+	1. View all books.
+	2. View all members.
+	3. Issue book to a member.
+	4. Check book availability.
+	5. Accept book returned by a member.
+	6. Add book.
 
-	Supermans Move (O): C2
-	
-	 	  A   B   C
-	1	  X	|	|
-		-------------
-	2		|	| O
-		-------------
-	3		| 	|	
+	1.
 
-
-	.
-	.
-	.
-	.
-	.
-	
-	 	  A   B   C
-	1	  X	|	| O
-		-------------
-	2		| X	| O
-		-------------
-	3		| 	| X
-	
-
-	Batman wins. Play again (y/n)?
+	Book Id : Book Name : Author   		 : Taken? : Taken By?
+	1 		  : Book 1    : Ayn Rand 		 : Yes    : Harshal
+	2 		  : Book 2    : John Grisham : No     : -
+	3 		  : Book 3    : David.B			 : Yes    : Harshal
+	4 		  : Book 4    : Sam					 : No     : -
   
+  2.
+
+	Student Id : Student Name    : Pending Books
+	1          : Batman  				 : 1
+	2          : Superman  			 : 0
+	3          : Ironman  			 : 2
+
+	3.
+
+	Enter member id: 2
+		Member found: Superman
+	Enter book id to assign: 1
+		That book is not available. Sorry.
+	Enter book id to assign: 2
+		Book 2 assigned to Superman.
+
+	4.
+
+	Enter book id to check availability: 2
+		That book is not available.
+
+	5.
+
+	Enter book id to return: 2
+		Book successfully marked as returned.
+
+	6.
+
+	Enter name of the new book: The Fountainhead
+	Enter author name: John Grisham
+
+	A new book entry created. Book Id  assigned is 12.
+
+### Program Details
+
+Create a file main.rb and it should only have below code.
+
+	library = Library.new load_library_from_yaml
+	library.start()
+
+List down below points.
+
+	* Classes required.
+	* Attributes required for each class.
+	* Functions required for each class.
+
 ### Notes
 
 * Code should be indented & comments should be put in wherever required.
