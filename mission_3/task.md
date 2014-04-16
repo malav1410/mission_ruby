@@ -23,20 +23,27 @@ Allow 2 humans to play Tic Tac Toe. The game should work from command line. Belo
 	Batmans turn(X): catwoman
 	Invalid Input: Please enter the column and row of your move (Example: A1).
 	
-	Batmans turn(X): A1	 	  A   B   C
+	Batmans turn(X): A1
+
+	 	  A   B   C
 	1	  X	|	|
 		-------------
 	2		|	|
 		-------------
-	3		| 	|	Supermans Move (O): A1
-	The space entered is already taken.	Supermans Move (O): C2
+	3		| 	|
+
+	Supermans Move (O): A1
+	The space entered is already taken.
+
+	Supermans Move (O): C2
 	
 	 	  A   B   C
 	1	  X	|	|
 		-------------
 	2		|	| O
 		-------------
-	3		| 	|	
+	3		| 	|	
+
 
 	.
 	.

@@ -37,7 +37,7 @@ Follow the instruction from the previous example & implement Funkonacci Numbers!
 
 	funk(n) = 0 if n < 1
   	funk(n) = 1 if n = 1
-	funk(n) = funk(n - 1) - (2 × funk(n - 2)) otherwise
+	funk(n) = funk(n - 1) - (2 × funk(n - 2)) otherwise
 
 ### Extra Credit
 
