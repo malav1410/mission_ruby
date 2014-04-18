@@ -85,6 +85,10 @@ List down below points.
 
 * Code should be indented & comments should be put in wherever required.
 
-### References
+### Extra Credit
 
-[http://people.cs.pitt.edu/~eth13/cs0007/Project4.pdf](http://people.cs.pitt.edu/~eth13/cs0007/Project4.pdf)
+* Difference between require & load.
+* Difference between instance method & class method.
+* Difference between private & public instance methods.
+
+Provide example code for each of the above.
