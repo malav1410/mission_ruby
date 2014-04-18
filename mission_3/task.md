@@ -35,7 +35,7 @@ User is shown the main menu with below options.
 	3 		  : Book 3    : David.B			 : Yes    : Harshal
 	4 		  : Book 4    : Sam					 : No     : -
   
-  2.
+	2.
 
 	Student Id : Student Name    : Pending Books
 	1          : Batman  				 : 1
@@ -77,9 +77,9 @@ Create a file main.rb and it should only have below code.
 
 List down below points.
 
-	* Classes required.
-	* Attributes required for each class.
-	* Functions required for each class.
+* Classes required.
+* Attributes required for each class.
+* Functions required for each class.
 
 ### Notes
 
