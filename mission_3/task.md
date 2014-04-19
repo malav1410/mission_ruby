@@ -90,5 +90,6 @@ List down below points.
 * Difference between require & load.
 * Difference between instance method & class method.
 * Difference between private & public instance methods.
+* Check book.rb and submit a file providing required explanation.
 
 Provide example code for each of the above.
