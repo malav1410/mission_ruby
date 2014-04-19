@@ -1,5 +1,5 @@
 ###
-# Q. Why does line 24 not print out "false" when we marked taken as true by calling mark_taken_as_true on line 23?
+# Q. Why does line 26 not print out "false" when we marked taken as true by calling mark_taken_as_true on line 25?
 ###
 
 class Book
