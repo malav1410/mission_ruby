@@ -19,6 +19,18 @@
 
 ### What files are installed?
 The execution files are installed 
+
 erb  gem  irb  rake  rdoc  ri  ruby  testrb
 
+### How do we get access to Ruby from any location in command prompt?
+
+To get access to ruby from any location in command prompt we should write a path of that file in .bash_aliaases file.
+
+The .bashrc file also include .bash_aliases file. this file store the execution file path. it makes easy to read .bashrc file.
+
+ex: i make 1 file named hello.rb
+    now i want that this file can be run from anywhere in the computer.
+    for that i set path variable in .bash_aliaases file (add below line in this file.)
+      alias exefilename = "path/to/file/exefilename"
+      ex: alias hello.rb="~/Documents/hello.rb"
 
