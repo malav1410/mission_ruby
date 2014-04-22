@@ -26,6 +26,7 @@ Now at run time it execute directly this obj file.
 
 ###### How compiler compile the program.
 * In compiler there is one file which store some basic rules like and information of c language.
+        
         ex: int datatype
         main() function
         char datatype
