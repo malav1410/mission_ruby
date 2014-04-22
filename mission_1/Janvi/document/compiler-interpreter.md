@@ -44,8 +44,4 @@ Now at run time it execute directly this obj file.
     
     2.  batch mode 
 
-        the program is prepared the same way it is in compilation; it is prepared in its entirety and stored in a file. The file containing the program is used as the input to the interpreter that analyzes the file statement by statement and executes the statements one by one.
-
-
-
-    
+        the program is prepared the same way it is in compilation; it is prepared in its entirety and stored in a file. The file containing the program is used as the input to the interpreter that analyzes the file statement by statement and executes the statements one by one.    
