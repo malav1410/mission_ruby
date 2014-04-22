@@ -26,9 +26,9 @@ Now at run time it execute directly this obj file.
 
 ###### How compiler compile the program.
 * In compiler there is one file which store some basic rules like and information of c language.
-      ex: int datatype
-      main() function
-      char datatype
+        ex: int datatype
+        main() function
+        char datatype
 * Now when program compile it reads int or character it first find form this file  and than from that file it convert code in to machine language
 
 ##### Interpreter :
