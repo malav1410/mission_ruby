@@ -10,7 +10,6 @@ puts Country.all.count == 2 # Returns array of all countries.
 puts State.all.count == 4   # Returns array of all states.
 puts City.all.count == 8    # Returns array of all cities.
 
-=begin
 # Find by attribute name.
 country = Country.find_by name: 'india' # Country object.
 puts country.name == "india"
@@ -25,6 +24,7 @@ puts city.name == "bharuch"
 city = City.find_by id: 4               # City object.
 puts city.name == "pune"
 
+=begin
 # Find using id.
 country = Country.find(2)
 puts country.name == "pakistan"
