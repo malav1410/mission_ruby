@@ -37,24 +37,40 @@ module ActiveRecord
       return arr
     end
 
+    # Find by attribute name.
     def self.find_by(attribute)
       # Get all objects of class
       objs_arr = self.all
-      puts objs_arr
+      #puts objs_arr
 
       # We get argument in Hash, So get key and value from that hash which is useful to find data from objevt
       # Because key is a column name of table and value is a value which we have to find from that column 
       attribute_name = attribute.keys
-      puts attribute_name[0]
+      #puts attribute_name[0]
       attribute_value = attribute.values
-      puts attribute_value[0]
+      #puts attribute_value[0]
 
       # find matching value from objects and return that object as output of this method 
       objs_arr.each do |obj|
         if obj.send(attribute_name[0]) == attribute_value[0].to_s
           find_obj = obj
-          puts find_obj
+          #puts find_obj
           return find_obj
+        end
+      end
+    end
+
+    # Find using id.
+    def self.find(id_no)
+      # Get all objects of class
+      objs_arr = self.all
+      #puts objs_arr
+
+      objs_arr.each do |obj|
+        if obj.send(:id) == id_no.to_s
+          found_obj = obj
+          #puts found_obj
+          return found_obj
         end
       end
     end

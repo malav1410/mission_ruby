@@ -24,7 +24,7 @@ puts city.name == "bharuch"
 city = City.find_by id: 4               # City object.
 puts city.name == "pune"
 
-=begin
+
 # Find using id.
 country = Country.find(2)
 puts country.name == "pakistan"
@@ -33,6 +33,7 @@ puts state.name == "punjab"
 city = City.find(4)
 puts city.name == "pune"
 
+=begin
 # has_many
 puts Country.find(1).states.count == 2
 puts Country.find(1).cities.count == 4
