@@ -137,6 +137,40 @@ module ActiveRecord
         end
       end
     end
+    
+    # belongs_to
+    def self.belongs_to(*args)
+      # puts args.to_s
+      if args.length == 1
+        belongs_to_class_name = args[0].to_s
+        # puts belongs_to_class_name
+
+        send :define_method, belongs_to_class_name do
+          # Value of foreign key column
+          argument_for_find = self.send("#{belongs_to_class_name}" + "_id")
+          # puts argument_for_find
+          object = Object.const_get(belongs_to_class_name.capitalize).find(argument_for_find)
+          # puts object
+          return object
+        end
+      # Through association  
+      else
+        through_class_name = args[1].values[0].to_s
+        # puts through_class_name
+        main_method_name = args[0].to_s
+
+        send :define_method, main_method_name do
+          argument_for_find = self.send("#{through_class_name}" + "_id")
+          # puts argument_for_find
+          first_object = Object.const_get(through_class_name.capitalize).find(argument_for_find)
+
+          argument_for_next_find = first_object.send("#{main_method_name}" + "_id")
+          object = Object.const_get(main_method_name.capitalize).find(argument_for_next_find)
+          # puts object
+          return object
+        end
+      end
+    end
   end
 
 end
