@@ -33,12 +33,11 @@ puts state.name == "punjab"
 city = City.find(4)
 puts city.name == "pune"
 
-=begin
 # has_many
 puts Country.find(1).states.count == 2
 puts Country.find(1).cities.count == 4
 puts State.find(1).cities.count == 2
-
+=begin
 # belongs_to
 country = State.find(1).country
 puts country.name == "india"
