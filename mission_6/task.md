@@ -3,9 +3,20 @@ Tic Tac Toe Reloaded
 
 What you need to do?
 
-* Modify verify function in verify.rb to return correct values.
+* Do not modify main.rb.
 
-* ruby main.rb should output 1, 0 & -1
+````ruby
+
+  $ ruby main.rb
+
+  # should output
+  1
+  0
+  -1
+
+````
+
+* Modify verify function in verify.rb to return correct values.
 
 * Create a file test.rb, require verify.rb and test if your function works correctly for all possible games.
 
